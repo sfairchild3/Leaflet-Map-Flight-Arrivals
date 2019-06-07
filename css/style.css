@@ -1,0 +1,64 @@
+body {
+    font-family: 'Quattrocento Sans', sans-serif;
+
+}
+
+.top {
+    height: 200px;
+}
+
+#panel,
+#year {
+    color: white;
+}
+
+#wrapper {
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+#map {
+    height: 450px;
+    width: 80%;
+    margin: 15px auto;
+}
+
+#panel {
+    width: 40%;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+#forward {
+    float: right;
+}
+
+#reverse {
+    float: left;
+}
+
+#buttons {
+    align:
+        width: 40%
+}
+
+.leaflet-tooltip-content p {
+    margin: 0.2em 0;
+    text-align: center;
+}
+
+#plane {
+    height: 150px;
+    float: left;
+    padding-left: 10%;
+}
+
+footer {
+    height: 100px;
+    text-align: center;
+    margin-top: 15px;
+}

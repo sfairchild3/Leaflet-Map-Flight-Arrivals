@@ -1,0 +1,52 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.4277,33.6407 ]
+    },
+    "properties": {
+    "Airport":"Atlanta, GA (ATL)",
+    "Airport Name":"Hartsfield-Jackson Atlanta International Airport",
+    "Airport Code":"ATL",
+    "2018":83.67,
+    "2017":84.44,
+    "2016":86.29,
+    "2015":84.44,
+    "2014":81.2,
+    "2013":80.85,
+    "2012":84.74,
+    "2011":80.28,
+    "2010":78.75,
+    "2009":72.6,
+    "2008":75.52
+
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.6684,39.1774 ]
+    },
+    "properties": {
+    "Airport":"Baltimore, MD (BWI)",
+    "Airport Name":"Baltimore Washington International Thurgood Marshall Airport",
+    "Airport Code":"BWI",
+    "2018":80.61,
+    "2017":82.23,
+    "2016":83.26,
+    "2015":80.73,
+    "2014":77.39,
+    "2013":79.43,
+    "2012":81.55,
+    "2011":81.66,
+    "2010":79.75,
+    "2009":82.46,
+    "2008":80.31
+    
+    }
+  }
+  ]}
