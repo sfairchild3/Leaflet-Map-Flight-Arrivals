@@ -14,8 +14,7 @@ function createMap() {
 
 function getData(map) {
     //load the data
-    $.ajax("../data/AirportArrivals_percentOnTime.geojson", {
-        //    $.ajax("../data/practice.geojson", {
+    $.ajax("data/AirportArrivals_percentOnTime.geojson", {
         dataType: "json",
         success: function (response) {
 
