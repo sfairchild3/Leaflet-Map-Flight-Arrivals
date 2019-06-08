@@ -113,6 +113,7 @@ function createSequenceControls(map, attributes) {
     $('.range-slider').on('input', function () {
         var index = $(this).val();
         updatePropSymbols(map, attributes[index]);
+        updateYear(index);
     });
 
 
