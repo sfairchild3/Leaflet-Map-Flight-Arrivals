@@ -1,64 +1,86 @@
 body {
-    font-family: 'Quattrocento Sans', sans-serif;
+	font-family: 'Quattrocento Sans', sans-serif;
 
 }
 
+p {
+	color: white;
+}
+
+/*
 .top {
-    height: 200px;
+	height: 200px;
 }
+*/
 
 #panel,
 #year {
-    color: white;
+	color: white;
 }
 
 #wrapper {
-    width: 100%;
-    margin: auto;
-    padding: 15px;
-    border-radius: 25px;
+	/*	width: 100%;*/
+	margin-top: 10%;
+	/*	padding: 15px;*/
+	border-radius: 25px;
 }
 
+
 #map {
-    height: 450px;
-    width: 80%;
-    margin: 15px auto;
+	height: 450px;
+	width: 95%;
+	margin: auto;
 }
 
 #panel {
-    width: 40%;
-    padding: 20px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#title {
+	padding-top: 5%;
 }
 
 #forward {
-    float: right;
+	float: right;
+	margin-right: 5%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+
 }
 
 #reverse {
-    float: left;
+	float: left;
+	margin-left: 5%;
+	margin-top: 5%;
+	margin-bottom: 2%;
 }
 
 #buttons {
-    align:
-        width: 40%
+	vertical-align: middle;
+	width: 100%;
+	z-index: 1;
 }
 
-.leaflet-tooltip-content p {
-    margin: 0.2em 0;
-    text-align: center;
+.leaflet-popup-content h6 {
+	margin: 0.2em 0;
+	text-align: center;
 }
 
 #plane {
-    height: 150px;
-    float: left;
-    padding-left: 10%;
+	height: 150px;
+	float: left;
+	padding-left: 10%;
 }
 
 footer {
-    height: 100px;
-    text-align: center;
-    margin-top: 15px;
+	height: 100px;
+	text-align: center;
+	margin-top: 15px;
+}
+
+
+.range-slider {
+	margin: 10px 0 0 0%;
 }
