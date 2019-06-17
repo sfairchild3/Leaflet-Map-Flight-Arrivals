@@ -33,11 +33,9 @@ function createPropSymbols(response, map, attributes) {
 		pointToLayer: function (feature, latlng) {
 			return pointToLayer(feature, latlng, attributes)
 		}
-
 	})
 
 	searchLayer.addTo(map);
-	console.log(searchLayer)
 	map.addControl(new L.Control.Search({
 		layer: searchLayer,
 		propertyName: 'Airport Name',
@@ -142,7 +140,7 @@ function createSequenceControls(map, attributes) {
 
 	//set slider attributes
 	$('.range-slider').attr({
-		max: 9,
+		max: 10,
 		min: 0,
 		value: 0,
 		step: 1
@@ -161,11 +159,11 @@ function createSequenceControls(map, attributes) {
 		var index = $('.range-slider').val();
 		if ($(this).attr('id') == 'forward') {
 			index++;
-			index = index > 9 ? 0 : index;
+			index = index > 10 ? 0 : index;
 		} else if ($(this).attr('id') == 'reverse') {
 			index--;
 
-			index = index < 0 ? 9 : index;
+			index = index < 0 ? 10 : index;
 		}
 
 		$('.range-slider').val(index);
@@ -222,9 +220,9 @@ function updateYear(index) {
 		$('#year').html("<h4>2015</h4");
 	} else if (index == 8) {
 		$('#year').html("<h4>2016</h4");
-	} else if (index == 8) {
-		$('#year').html("<h4>2017</h4");
 	} else if (index == 9) {
+		$('#year').html("<h4>2017</h4");
+	} else if (index == 10) {
 		$('#year').html("<h4>2018</h4");
 	}
 }
@@ -233,7 +231,6 @@ function updateYear(index) {
 //build attribute arrays
 function processData(response) {
 	var attributes = [];
-	//
 	i = 0;
 	var values = response.features[i].properties;
 	for (var item in values) {
@@ -241,17 +238,7 @@ function processData(response) {
 			attributes.push(item);
 		}
 	}
-
 	return attributes;
-	//}
 }
-
-//
-//function getName(response) {
-//	var names = response.features[1].properties["Airport Name"];
-//	//	for var 
-//	console.log(names)
-//	return names
-//}
 
 $(document).ready(createMap);
