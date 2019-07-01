@@ -120,7 +120,7 @@ hr {
 
 #head {
 /* 	background-image: url("images/airplane.png"); */
-	background-image: url("../../images/airplane.png")
+	background-image: url("../images/airplane.png")
 	background-position: 85% 15%;
 	width: auto;
 	height: 450px;
