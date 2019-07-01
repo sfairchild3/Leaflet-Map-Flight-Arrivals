@@ -1,60 +1,99 @@
-body {
+body,
+h1 {
 	font-family: 'Quattrocento Sans', sans-serif;
-
 }
 
-p {
+h3 {
+	font-family: 'Quattrocento Sans', sans-serif;
 	color: white;
+	font-size: calc(1.2vw + 1.2vh + 3vmin);
+	text-shadow: 2px 2px #333333;
 }
 
-/*
-.top {
-	height: 200px;
+h4 {
+	font-family: 'Quattrocento Sans', sans-serif;
+	color: white;
+	font-size: calc(1vw + 1vh + .vmin);
 }
-*/
 
-#panel,
+
+h6 {
+	font-family: 'Quattrocento Sans', sans-serif;
+	color: #333333;
+
+}
+
+h5 {
+	font-size: calc(.7vw + .7vh + 1.2vmin);
+}
+
 #year {
+	font-size: calc(1vw + 1vh + 3vmin);
+}
+
+#globe {
+	height: 50px;
+	padding-right: 2%;
+	padding-left: 5%;
+}
+
+hr {
+	border-color: white;
+}
+
+
+#panel {
 	color: white;
+	/*	height: 50px;*/
 }
 
 #wrapper {
-	/*	width: 100%;*/
 	margin-top: 10%;
-	/*	padding: 15px;*/
+	padding: 15px;
 	border-radius: 25px;
 }
 
 
 #map {
-	height: 450px;
+	height: 500px;
 	width: 95%;
 	margin: auto;
+	margin-bottom: 2%;
+	margin-top: 2%;
 }
 
-#panel {
+#best,
+#worst {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	color: white;
 }
 
-#title {
-	padding-top: 5%;
+.title {
+	padding-left: 15px;
+	margin-top: 5%;
 }
+
 
 #forward {
 	float: right;
 	margin-right: 5%;
-	margin-top: 5%;
 	margin-bottom: 2%;
+	background-color: transparent;
+	color: white;
+	border: transparent;
+
 
 }
 
 #reverse {
 	float: left;
 	margin-left: 5%;
-	margin-top: 5%;
 	margin-bottom: 2%;
+	background-color: transparent;
+	color: white;
+	border: transparent;
 }
 
 #buttons {
@@ -68,19 +107,57 @@ p {
 	text-align: center;
 }
 
+.container {
+	margin-top: -445px;
+}
+
 #plane {
-	height: 150px;
+	height: 175px;
 	float: left;
 	padding-left: 10%;
+	padding-right: 3%;
 }
+
+#head {
+	background-image: url('/images/airplane-head.png');
+	background-position: 85% 15%;
+	width: auto;
+	height: 450px;
+	box-shadow: 0 0 5px 2px #282a2d;
+}
+
 
 footer {
-	height: 100px;
+
 	text-align: center;
 	margin-top: 15px;
+	background-color: #67B7BF;
+	margin-top: 5%;
 }
 
+footer hr {
+	color: grey;
+
+}
 
 .range-slider {
 	margin: 10px 0 0 0%;
+}
+
+#atts {
+	padding-top: 2%;
+	color: #333333;
+	font-size: calc(.7vw + .7vh + 1vmin);
+}
+
+#atts i {
+	color: #555555
+}
+
+#atts p {
+	font-size: calc(.6vw + .6vh + .5vmin);
+}
+
+#atts a {
+	color: #333333
 }

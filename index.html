@@ -31,103 +31,119 @@
 	<!--leaflet-search-plugin css-->
 	<link rel="stylesheet" href="css/leaflet-search.src.css">
 
+	<!-- leaflet zoom min plugin css -->
+	<link rel="stylesheet" href="css/L.Control.ZoomMin.css" media="screen">
+
 
 </head>
 
 <body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<img id='globe' src="images/travel.svg" alt="plane flying over the globe">
+		<a class="navbar-brand" href="#"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-	<!--
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
--->
+					<a class="nav-link" href="#">Arrive On Time?<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Real Time Flight Info</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="https://flightaware.com/">Flight Aware</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<header id='head'>
+	</header>
 
 
 	<main role="main" class="container">
-
-		<div class="text-center mt-5 pt-5 container">
-			<header class="top">
+		<div class=" mt-5 pt-5">
+			<div id="top">
 				<div>
-					<img src="images/globe.svg" alt="plane flying over the globe" id="plane">
 					<div class="title">
-						<h1> Arrive on Time?</h1>
-						<h6> A web map of flight arrivals as a percentage on time for <br> 30 major United States airports. </h6>
+						<h3>Flight Arrivals On Time <br>2018-2008
+						</h3>
+						<h5> A map showing flight arrivals as a percentage on time for 30 major United States airports. </h5>
 					</div>
 				</div>
-
-
-			</header>
+			</div>
 
 
 			<div id="wrapper" class="bg-dark">
-				<div id="buttons">
-					<div id="forward"></div>
-					<div id="reverse"></div>
-				</div>
-				<p id="title">Flight Arrivals On Time 2008-2018</p>
+
+				<center>
+					<h4 id="year"></h4>
+					<hr />
+					<div id="buttons">
+						<div id="forward"></div>
+						<div id="reverse"></div>
+					</div>
+					<div id="slider"></div>
+					<hr />
+					<div id="panel">
+						<div id="best"></div>
+						<div id="worst"></div>
+					</div>
+				</center>
+
 				<div id="map"></div>
-				<div id="panel" class="container">
-					<center>
-						<div id="slider"></div>
-						<p id="year"></p>
-					</center>
-				</div>
+
 			</div>
 		</div>
 
 
-		<footer>
-			<div>
-				<div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-			</div>
-		</footer>
+
 
 
 
 	</main><!-- /.container -->
 
+	<footer>
+		<div>
+			<div id='atts'>
+				A map by Shane Fairchild | MS GIS Web Map Applications and Programming
+				<div>
+					<a href="https://github.com/sfairchild3" target="_blank">
+						<i class="fab fa-github-square fa-2x"></i>
+					</a>
+					<a href="https://sfairchild3.github.io/sfairchild3/" target="_blank">
+						<i class="fas fa-globe-americas fa-2x"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/shane-fairchild-a3a3bb111/" target="_blank">
+						<i class="fab fa-linkedin fa-2x"></i>
+					</a>
+
+				</div>
+
+				<div>
+					<p>Globe icon made by<a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY. </a> Photo by Alex Pham from Pexels</p>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
+	<!-- Bootstrap core JavaScript==================================================-->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
 	<!-- Leaflet scripts -->
 	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
-	<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.js"></script>-->
+
 
 	<!-- jquery dev scripts -->
 	<script src="js/lib/jquery-3.4.1.js"></script>
@@ -140,6 +156,11 @@
 
 	<!-- leaflet search script -->
 	<script src="js/lib/leaflet-search.src.js"></script>
+
+	<!-- leaflet zoom min plugin script -->
+	<script src="js/lib/L.Control.ZoomMin.js"></script>
+
+
 
 
 </body>
